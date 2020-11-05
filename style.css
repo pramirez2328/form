@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap');
+:root {
+    --sucess-color: rgb(134, 252, 134);
+    --error-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Turret Road', cursive;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    border: 1px solid aqua;
+    text-shadow: 2px, 2px, 3px, white;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    width: 350px;
+}
+
+#form h2 {
+    border: 1px solid aqua;
+    padding: 1rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    height: 1.5rem;
+}
+
+.formControl input.success {
+    border-color: var(--sucess-color);
+    background-color: var(--sucess-color);
+}
+
+input.error {
+    border-color: var(--error-color);
+}
+
+small {
+    display: block;
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.error small {
+    visibility: visible;
+}
+
+.formControl input {
+    border-radius: 5px;
+    position: relative;
+}
+
+input:hover {
+    border-color: aqua;
+}
+
+#button {
+    background-color: aqua;
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 100%;
+    margin: auto;
+    font-size: larger;
+    text-align: center;
+    font-family: fantasy;
+    cursor: pointer;
+    outline: none;
+}
+
+#button:hover {
+    background-color: antiquewhite;
+}
